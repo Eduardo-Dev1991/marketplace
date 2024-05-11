@@ -1,0 +1,19 @@
+.main__bg {
+    background-color: #000;
+}
+
+.main__container__content{
+    align-self: end;
+    padding-bottom: 80px;
+}
+
+.main__container h1{
+    margin-bottom: 32px;
+}
+
+.main__container p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color:var(--color-c5);
+    margin-bottom: 20px;
+}

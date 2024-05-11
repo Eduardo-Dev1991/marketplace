@@ -1,0 +1,12 @@
+@import "global/global.css";
+@import "components/global.css";
+@import "global/header.css";
+
+/* utilities */
+@import "utilities/colors.css";
+@import "utilities/fonts.css";
+
+
+                /* PAGES */
+/* Index */
+@import "pages/index/index.css"
