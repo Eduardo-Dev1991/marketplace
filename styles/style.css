@@ -1,10 +1,10 @@
 @import "global/global.css";
+@import "utilities/fonts.css";
 @import "components/components.css";
 @import "global/header.css";
 
 /* utilities */
 @import "utilities/colors.css";
-@import "utilities/fonts.css";
 
 
                 /* PAGES */
