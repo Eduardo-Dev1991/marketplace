@@ -9,4 +9,5 @@
 
                 /* PAGES */
 /* Index */
-@import "pages/index/intro.css"
+@import "pages/index/intro.css";
+@import "bicycles/bicycle-list.css";
