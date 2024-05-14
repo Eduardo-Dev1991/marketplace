@@ -21,16 +21,11 @@
 }
 
 .main__container p {
-    font-size: 1.5rem;
-    line-height: 1.5;
     color: var(--color-c5);
     margin-bottom: 20px;
 }
 
 @media(width<1200px) {
-    .main__container p {
-        font-size: 1.3rem;
-    }
 
     .main__container h1 {
         margin-bottom: 16px;
