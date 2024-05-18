@@ -1,15 +1,16 @@
 @import "global/global.css";
 @import "utilities/fonts.css";
+@import "utilities/colors.css";
 @import "components/components.css";
 @import "global/header.css";
 
-/* utilities */
-@import "utilities/colors.css";
+/* PAGES */
 
 
-                /* PAGES */
 /* Index */
 @import "pages/index/intro.css";
 @import "bicycles/bicycle-list.css";
 @import "pages/index/technology.css";
 @import "pages/index/partners.css";
+@import "pages/index/testimony.css";
+@import "global/insurance.css";
