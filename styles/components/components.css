@@ -12,6 +12,16 @@
 
 }
 
+.button.button-secondary {
+    background: var(--color-c10);
+    color: var(--color-c2);
+}
+
+.button.button-secondary:hover {
+    background: linear-gradient(var(--color-c10),var(--color-c11)) var(--color-c11);
+
+}
+
 .button:hover {
     background: linear-gradient(#ffb60d, #e59317);
 }
@@ -27,6 +37,7 @@
     font-size: 4rem;
     line-height: 1.125;
     font-family: "Poppins", sans-serif;
+    color: var(--color-c11);
 }
 
 .title span {
