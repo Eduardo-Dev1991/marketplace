@@ -1,0 +1,8 @@
+.footer-bg {
+    background-color: var(--color-c12);
+}
+
+.footer__container__img img {
+    width: 136px;
+    height: 32px;
+}
