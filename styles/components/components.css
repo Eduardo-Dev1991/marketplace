@@ -9,7 +9,29 @@
     text-transform: uppercase;
     font-family: "poppins", sans-serif;
     font-size: 1rem;
+}
 
+.button:hover {
+    background: linear-gradient(#ffb60d, #e59317);
+}
+
+.button.arrow {
+    display: flex;
+    place-items: center;
+}
+
+.button.arrow::after {
+    content: "";
+    background: url("../../img/icones/seta.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.button.arrow:hover:after {
+    transform: translateX(4px);
 }
 
 .button.button-secondary {
@@ -18,12 +40,7 @@
 }
 
 .button.button-secondary:hover {
-    background: linear-gradient(var(--color-c10),var(--color-c11)) var(--color-c11);
-
-}
-
-.button:hover {
-    background: linear-gradient(#ffb60d, #e59317);
+    background: linear-gradient(var(--color-c10), var(--color-c11)) var(--color-c11);
 }
 
 .container {
@@ -43,6 +60,29 @@
     color: var(--color-p1);
 }
 
+.title-secondary {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--color-c5);
+}
+
+.sub-header-bg {
+    background-color: var(--color-c11);
+    margin-bottom: 60px;
+}
+
+.sub-header__container {
+    padding: 60px 20px;
+}
+
+.sub-header__container .title-secondary {
+    margin-bottom: 8px;
+    display: block;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +96,19 @@
     .title {
         font-size: 3rem;
     }
+
+    .title-secondary {
+        font-size: 1.3rem;
+    }
 }
 
 @media(width<900px) {
     .title {
         font-size: 2.5rem;
+    }
+
+    .title-secondary {
+        font-size: 1.2rem;
     }
 
     .button {
@@ -72,6 +120,10 @@
 @media(width<750px) {
     .title {
         font-size: 2rem;
+    }
+
+    .title-secondary {
+        font-size: 1rem;
     }
 
     .button {

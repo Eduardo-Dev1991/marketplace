@@ -15,3 +15,6 @@
 @import "pages/index/partners.css";
 @import "pages/index/testimony.css";
 @import "global/insurance.css";
+
+/* bicycles */
+@import "pages/bicycles/bicycles.css";
