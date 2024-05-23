@@ -18,3 +18,7 @@
 
 /* bicycles */
 @import "pages/bicycles/bicycles.css";
+
+/* insurance */
+@import "pages/insurances/insurances.css";
+@import "pages/insurances/question.css";

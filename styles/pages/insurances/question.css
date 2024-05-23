@@ -1,0 +1,32 @@
+.questions-container {
+    padding: 120px 0;
+}
+
+.questions-container h2 {
+    padding-bottom: 60px;
+}
+
+.questions__list {
+    display: grid;
+    gap: 12px;
+}
+
+.questions__list li {
+    display: grid;
+    grid-template-columns: 1fr  auto;
+    gap: 8px;
+    padding: 12px 24px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-c1);
+}
+
+.questions__list p {
+    grid-column: 1/-1;
+    max-width: 70ch;
+}
+
+.questions__list li img {
+    width: 14px;
+    height: 8px;
+}
