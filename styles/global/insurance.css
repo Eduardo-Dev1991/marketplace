@@ -6,16 +6,20 @@
     padding: 60px 20px;
 }
 
+#insurance .insurance__container{
+    padding-top: 0;
+}
+
 .insurance__container h2 {
     padding-bottom: 60px;
     color: var(--color-w);
 }
 
+
 .insurance__container__list {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 40px;
-
 }
 
 .insurance__container__item {
