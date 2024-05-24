@@ -1,32 +1,63 @@
 .questions-container {
-    padding: 120px 0;
+    padding: 120px 20px;
 }
 
 .questions-container h2 {
     padding-bottom: 60px;
 }
 
-.questions__list {
-    display: grid;
-    gap: 12px;
+.question__list__item {
+    padding: 20px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.questions__list li {
+.question__list__item:nth-child(odd) {
+    background-color: var(--color-c2);
+}
+
+.question__list__item dt {
     display: grid;
-    grid-template-columns: 1fr  auto;
-    gap: 8px;
-    padding: 12px 24px;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-c1);
+    gap: 8px;
+    margin-bottom: 16px;
 }
 
-.questions__list p {
-    grid-column: 1/-1;
-    max-width: 70ch;
-}
-
-.questions__list li img {
-    width: 14px;
+.question__list__item dt::before {
+    content: "";
+    display: block;
+    width: 12px;
     height: 8px;
+    background-color: var(--color-p1);
+}
+
+.question__list__item dt::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 6px;
+    background: url("../../../img/icones/seta-abrir.svg") no-repeat;
+    transition: .3s;
+}
+
+.question__list__item dt:hover:after {
+    transform: rotate(180deg);
+}
+
+.question__list__item dd {
+    padding-left: 20px;
+    max-width: 80ch;
+}
+
+@media(width<1100px) {
+
+    .questions-container {
+        padding: 60px 20px;
+    }
+
+    .questions-container h2 {
+        padding-bottom: 30px;
+    }
 }

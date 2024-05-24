@@ -5,34 +5,39 @@
 .advantages-container {
     padding: 120px 20px 60px 20px;
 }
+
 .advantages-container .title {
     padding-bottom: 60px;
 }
 
 .advantages-container__list {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    gap: 40px 80px;
 }
 
-.advantages-container__list li{
+.advantages-container__list li {
     display: grid;
     gap: 8px;
 }
 
-.advantages-container img{
+.advantages-container img {
     width: 32px;
     height: 32px;
 }
 
-@media(width<900px){
-    .advantages-container__list {
-        grid-template-columns: repeat(2,1fr);
+@media(width<1100px) {
+
+    .advantages-container {
+        padding-top: 60px;
     }
 }
 
-@media(width<500px){
+@media(width<900px) {
+
     .advantages-container__list {
-        grid-template-columns: 1fr;
+        gap: 40px;
     }
+
 }
+
