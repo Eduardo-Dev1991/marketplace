@@ -1,0 +1,123 @@
+.bicycle-bg {
+    background-color: var(--color-c11);
+}
+
+.bicycle-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 60px;
+    align-items: start;
+}
+
+.bicycle-container__img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.bicycle-container__img img {
+    flex: 1;
+    min-width: 200px;
+}
+
+.bicycle-container__img img:first-child {
+    min-width: 100%;
+}
+
+.bicycle-container__content__description {
+    margin-bottom: 40px;
+}
+
+.bicycle-container__content__description p {
+    margin-bottom: 32px;
+}
+
+.bicycle-container__content__description__buy {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 12px;
+    place-items: center start;
+}
+
+.bicycle-container__content__description__buy ul {
+    display: grid;
+    gap: 8px;
+}
+
+.bicycle-container__content__description__buy ul li {
+    display: flex;
+    gap: 8px;
+    background-color: var(--color-c12);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.bicycle-container__content__description__buy img {
+    width: 16px;
+    height: 16px;
+}
+
+.bicycle-container__content__info {
+    margin-bottom: 40px;
+}
+
+.bicycle-container__content__info h2,
+.bicycle-container__content__data-sheet h2 {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+}
+
+.bicycle-container__content__info ul,
+.bicycle-container__content__data-sheet ul {
+    background-color: var(--color-c12);
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.bicycle-container__content__info ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.bicycle-container__content__info ul img {
+    width: 24px;
+    margin-bottom: 4px;
+}
+
+.bicycle-container__content__info ul h3 {
+    margin-bottom: 8px;
+}
+
+.bicycle-container__content__data-sheet ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bicycle-container__content__data-sheet ul hr {
+    border: 1px solid var(--color-c11);
+    margin: 4px 0 5px 0;
+}
+
+@media (width<850px) {
+    .bicycle-container {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+    }
+    
+    .bicycle-container__img {
+        grid-row: 2;
+    }
+}
+
+@media (width<450px) {
+    .bicycle-container__content__info ul{
+        grid-template-columns: 1fr;
+    }
+
+    .bicycle-container__content__description__buy {
+        grid-template-columns: 1fr;
+    }
+}
