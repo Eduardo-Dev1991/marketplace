@@ -7,8 +7,8 @@
 
 /* PAGES */
 
-
 /* Index */
+
 @import "pages/index/intro.css";
 @import "bicycles/bicycle-list.css";
 @import "pages/index/technology.css";
@@ -17,8 +17,15 @@
 @import "global/insurance.css";
 
 /* bicycles */
+
 @import "pages/bicycles/bicycles.css";
 
 /* insurance */
+
 @import "pages/insurances/insurances.css";
 @import "pages/insurances/question.css";
+
+/* nimbus */
+
+@import "pages/nimbus/nimbus-main.css";
+@import "pages/nimbus/nimbus-insurance.css";
