@@ -1,4 +1,5 @@
 .testimony {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 20px;
     background-color: var(--color-p1);
@@ -15,7 +16,7 @@
 }
 
 .testimony blockquote {
-    align-self: end;
+    align-content: end;
     padding: 40px 80px 40px 80px;
 }
 

@@ -4,6 +4,7 @@
 }
 
 .technology__container {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
@@ -73,7 +74,7 @@
     }
 
     .technology__container__content {
-        padding: 60px;
+        padding: 60px 0;
     }
 
 }
