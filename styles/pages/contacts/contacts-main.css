@@ -1,0 +1,89 @@
+#contacts {
+    --padding: 60px;
+    --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    --border-radius: 5px;
+    --margin-:32px;
+    background: linear-gradient(var(--color-c11) 600px, var(--color-c1) 0);
+}
+
+.contacts__container {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.contacts__container__content {
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-c12);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    padding: var(--padding);
+}
+
+.contacts__container__content h2 {
+    margin-bottom: 60px;
+}
+
+.contacts__container__content__address {
+    display: grid;
+    gap: 8px;
+    margin-bottom: var(--margin-);
+    background: url("../../../img/icones/local.svg") no-repeat 0 2px;
+    padding-left: 28px;
+}
+
+.contacts__container__content__contacts {
+    display: grid;
+    gap: 8px;
+}
+
+.contacts__container__content__contacts a {
+    display: block;
+    max-width: max-content;
+    padding-left: 28px;
+}
+
+.contacts__container__content__contacts a:hover {
+    color: var(--color-w);
+}
+
+.contacts__container__content__contacts a:first-child {
+    background: url("../../../img/icones/email.svg") no-repeat 0 2px;
+    max-width: max-content;
+}
+
+.contacts__container__content__contacts :nth-child(n+3) {
+    background: url("../../../img/icones/telefone.svg") no-repeat 0 2px;
+    margin-top: var(--margin-);
+    margin-bottom: var(--margin-);
+}
+
+.contacts__container__form {
+    box-shadow: var(--box-shadow);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    background-color: var(--color-w);
+    padding: var(--padding);
+}
+
+.contacts__container__content .social-media {
+    padding-left: 28px;
+}
+
+@media(width<870px) {
+    
+    .contacts__container {
+        --padding:30px;
+        --margin-:16px;
+        grid-template-columns: 1fr;
+    }
+
+    .contacts__container__content h2 {
+        margin-bottom: 32px;
+    }
+
+    .contacts__container__content {
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    
+    .contacts__container__form {
+        border-radius:  0 0 var(--border-radius) var(--border-radius);
+    }
+}

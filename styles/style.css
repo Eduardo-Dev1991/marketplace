@@ -4,6 +4,7 @@
 @import "components/components.css";
 @import "global/header.css";
 @import "global/footer.css";
+@import "global/form.css";
 
 /* PAGES */
 
@@ -29,3 +30,7 @@
 
 @import "pages/nimbus/nimbus-main.css";
 @import "pages/nimbus/nimbus-insurance.css";
+
+/* contacts*/
+
+@import "pages/contacts/contacts-main.css";
