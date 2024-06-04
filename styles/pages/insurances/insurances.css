@@ -41,3 +41,10 @@
 
 }
 
+@media(width<680px) {
+    .advantages-container__list li {
+        justify-items: center;
+        text-align: center;
+    } 
+}
+
