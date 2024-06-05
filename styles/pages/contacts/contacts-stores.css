@@ -1,0 +1,57 @@
+.maps-location-container__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.maps-location-container h2 {
+    margin: 60px 0 32px 0;
+}
+
+.maps-location-container__list__item img {
+    border-radius: 4px 4px 0 0;
+}
+
+.maps-location-container__list__item__address {
+    background-color: var(--color-w);
+    padding: 32px 60px;
+}
+
+.maps-location-container__list__item__address h3 {
+    position: relative;
+    display: flex;
+    place-items: center;
+    padding-bottom: 32px;
+}
+
+.maps-location-container__list__item__address h3::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    left: -20px;
+    background-color: var(--color-p1);
+}
+
+.maps-location-container__list__item__address div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 14px 32px 14px;
+}
+
+.maps-location-container__list__item__address p:last-child {
+    position: relative;
+    display: flex;
+    place-items: center;
+}
+
+.maps-location-container__list__item__address p:last-child::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../../../img/icones/horario.svg");
+    left: -24px;
+}

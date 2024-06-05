@@ -46,7 +46,6 @@
             <h1 class="title">contacts<span>.</span></h1>
         </div>
     </section>
-
     <main class="contacts-bg">
         <section class="contacts__container container">
 
@@ -71,61 +70,55 @@
 
             <div class="contacts__container__form" aria-label="Form">
                 <form action="post" class="form font-1-s colo-c11">
-                    
-                    <div>
-                        <label for="name" class="font-1-l color-c12">Name</label>
+
+                    <div class="contacts__container__form__name">
+                        <label for="name">Name</label>
                         <input type="text" name="name" id="name" class="font-2-s color-c7" placeholder="Your name">
                     </div>
 
                     <div class="contacts__container__form__phone">
-                        <label for="phone" class="font-1-l color-c12">Phone</label>
+                        <label for="phone">Phone</label>
                         <input type="tel" name="phone" id="phone" class="font-2-s color-c7"
                             placeholder="+55 (00)9999-9999">
                     </div>
 
-                    <div class="contacts__container__form__email">
-                        <label for="email" class="font-1-l color-c12">Email</label>
+                    <div class="contacts__container__form__email col-2">
+                        <label for="email">Email</label>
                         <input type="email" name="email" id="email" class="font-2-s color-c7"
                             placeholder="YourEmail@gmail.com">
                     </div>
 
-                    <div class="contacts__container__form__text-area">
-                        <label for="textArea" class="font-1-l color-c12">Message</label>
-                        <textarea name="textArea" id="textArea" class="font-2-s color-c7"
-                            placeholder="What need you ?" rows="5"></textarea>
+                    <div class="contacts__container__form__text-area col-2">
+                        <label for="textArea">Message</label>
+                        <textarea name="textArea" id="textArea" class="font-2-s color-c7" placeholder="What need you ?"
+                            rows="5"></textarea>
                     </div>
 
-                    <button class="button">Send message</button>
+                    <button class="button col-2">Send message</button>
                 </form>
             </div>
+
         </section>
     </main>
 
-    <article class="maps-location-bg">
-        <h2 class="title">Local Stores<span>.</span></h2>
-        <ul>
-            <li>
+    <article class="maps-location-container container">
+        <h2 class="title color-c12">Local Stores<span>.</span></h2>
+        <ul class="maps-location-container__list">
+            <li class="maps-location-container__list__item">
                 <img src="../img/lojas/rj.jpg" alt=" Store Rio de Janeiro Localization">
-                <h3 class="title-xl-animation color-c12">Rio de janeiro</h3>
-                <address class="color-c12 font-2-s">
-                    <p>Rua 25 de março</p>
-                    <p>Rio de Janeiro - RJ</p>
-                    <a href="mailto:aracaju@bikcraft.com">rio@bikcraft.com</a>
-                    <a href="79 9 9999-9999">79 9 9999-9999</a>
-                    <span class="font-1-xs"> 08-18h de seg à domingo</span>
-                </address>
+                
+                <div class="maps-location-container__list__item__address color-c8 font-2-s">
+                    <h3 class="font-1-xl color-c12">Rio de janeiro</h3>
+                    <div>
+                        <p>Rua 25 de março</p>
+                        <p>Rio de Janeiro - RJ</p>
+                        <a href="mailto:aracaju@bikcraft.com">rio@bikcraft.com</a>
+                        <a href="79 9 9999-9999">79 9 9999-9999</a>
+                    </div>
+                    <p class="font-1-xs color-c12"> 08-18h de seg à domingo</p>
+                </div>
             </li>
-            <li>
-                <img src="../img/lojas/sp.jpg" alt=" Store São Paulo Localization">
-                <h3 class="title-xl-animation color-c12">São Paulo</h3>
-                <address class="color-c12 font-2-s">
-                    <p>Rua 25 de março</p>
-                    <p>São Paulo - RJ</p>
-                    <a href="mailto:aracaju@bikcraft.com">sp@bikcraft.com</a>
-                    <a href="79 9 9999-9999">79 9 9999-9999</a>
-                    <span class="font-1-xs"> 08-18h de seg à domingo</span>
-                </address>
-            </li>
+
         </ul>
     </article>
 

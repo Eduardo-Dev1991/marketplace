@@ -9,6 +9,7 @@
 .contacts__container {
     display: grid;
     grid-template-columns: 5fr 7fr;
+    margin-bottom: var(--padding);
 }
 
 .contacts__container__content {
